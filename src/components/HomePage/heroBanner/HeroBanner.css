@@ -1,0 +1,52 @@
+* {
+  margin-top: 0;
+}
+.Herobanner {
+  width: 100%;
+  
+}
+
+
+.homeimgbackground {
+  width: 100%;
+  height: 100%;
+    position: relative;
+  top: 0;
+  left: 0;
+  
+}
+.homeimgbackground img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  background-size: cover;
+  filter: blur(2.5px);
+ 
+ 
+  
+}
+
+.homeimgbackground .text{
+    position: absolute;
+    color: white;
+    top: 27%;
+    left: 25%
+}
+.text{
+    text-align: center;
+  
+}
+
+
+.tagline {
+  font-style: italic;
+  font-weight: bold;
+  color: rgb(249, 5, 241);
+}
+.headline {
+  font-size: 100px
+  
+}
+
+
+
