@@ -11,9 +11,11 @@ const Navbar = () => {
 
   const searchQueryHandler = (event) => {
     if (event.key === "Enter" && query.length > 0) {
-      navigate(`/search/${query}`); // navigate used for user entered movie name pass to url.
+      navigate(`/search/${query}`);           // navigate used for user entered movie name pass to url.
     }
   };
+
+ 
   return (
     <div className="navbar">
       <div className="logo_moviename" onClick={()=>{navigate('/')}}>
@@ -24,12 +26,12 @@ const Navbar = () => {
       <div>
         <ul>
           <li >
-            <NavLink to={"/explore/movies"}>
+            <NavLink to={"/explore/movies"} style={{ textDecoration: 'none' }}>
               <p className="movies">Movies</p>
             </NavLink>
           </li>
           <li>
-            <NavLink to={"/explore/tv"}>
+            <NavLink to={"/explore/tv"} style={{ textDecoration: 'none' }}>
               <p>TvShows</p>
             </NavLink>
           </li>
@@ -42,7 +44,7 @@ const Navbar = () => {
               onKeyUp={searchQueryHandler}
               onChange={(event) => setQuery(event.target.value)}
             />
-            <button className="button">Search</button>
+            <button className="button" >Search</button>
           </div>
         </ul>
       </div>

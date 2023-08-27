@@ -19,10 +19,14 @@ import SearchResult from './components/searchResult/SearchResult'
 import Explore from './components/explor/Explore';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
+import ReactGA from "react-ga4";          // Import google analytics
 
 
-
-function App() {  
+function App() { 
+  TRACKING_ID = 'G-JT9F3GVD1K'
+  ReactGA.initialize(TRACKING_ID);
+  ReactGA.pageview(window.location.pathname + window.location.search);
+  
   const dispatch = useDispatch();
   
   useEffect(()=>{
