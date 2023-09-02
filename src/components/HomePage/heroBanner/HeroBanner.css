@@ -48,5 +48,40 @@
   
 }
 
+@media (max-width:600px) {
+  .homeimgbackground img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    background-size: cover;
+    filter: blur(2.5px);
+     
+  }
+
+  .homeimgbackground .text .headline {
+    font-size: 40px
+    
+  }
+  .homeimgbackground .text{
+    position: absolute;
+    color: white;
+    top: 27%;
+    left: 1%
+  }
+  .text{
+    text-align: center;
+  
+  }
+  .tagline {
+    font-style: italic;
+    font-size: 15px;
+    color: rgb(249, 5, 241);
+    padding: 0px 2px;
+  }
+  
+    
+  
+}
+
 
 

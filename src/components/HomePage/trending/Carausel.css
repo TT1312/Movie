@@ -83,3 +83,34 @@
     font-size: 14px;
     opacity: 0.5;
 }
+
+@media (max-width: 600px) {
+    .carouselItems {
+   
+        gap: 3px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        overflow: hidden;
+        margin-left: 3px;
+        
+        padding: 0;
+       
+    }
+    .posterBlock img{
+        width: 15vh;
+        height: 15vh;
+        object-fit: cover;
+        object-position:center;
+        border-radius: 15px;
+        top: 0;
+        border: 2px solid red;
+        
+        
+    }
+    .posterBlock{
+        display: flex;
+    }
+   
+}

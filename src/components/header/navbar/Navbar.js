@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import movielogo from '../../../assets/movix-logo.png'
+import SearchIcon from '@mui/icons-material/Search';
 
 const Navbar = () => {
   const [query, setQuery] = useState("");
@@ -45,6 +46,7 @@ const Navbar = () => {
               onChange={(event) => setQuery(event.target.value)}
             />
             <button className="button" >Search</button>
+            <SearchIcon className="searchIcon"/>
           </div>
         </ul>
       </div>

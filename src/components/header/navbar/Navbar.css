@@ -68,7 +68,7 @@ li{
    border: 0;
    border-radius: 30px 0 0 30px;
    padding: 0 20px;
-   
+
    margin-left: 20px;
 }
 
@@ -84,11 +84,68 @@ li{
    /* margin-right:20px ; */
    
 }
+.navbar ul .searchinput .searchIcon{
+  display: none;
+  
+}
 
 p{
   text-decoration: none;
   color: white;
   
+}
+
+
+@media (max-width:750px) {
+  .navbar ul li{
+    display: none;
+  }
+}
+
+@media (max-width:600px) {
+  
+  .navbar .logo_moviename .logo{
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px;
+      
+  }
+  .navbar .logo_moviename h3{
+    font-size: 20px;
+  }
+  .navbar ul li{
+    display: none;
+    
+  }
+
+  .navbar ul .searchinput .input{
+    display: none;
+    width: 20%;
+    background-color: white;
+    height: 10px;
+    outline: 0;
+    border: 0;
+    border-radius: 30px 0 0 30px;
+    padding: 15px 10px;
+    
+
+  }
+  .navbar ul .searchinput .button{
+    display: none;
+    width: 50px;
+   height: 30px;
+   color: white;
+   outline: 0;
+   border: 0;
+   border-radius: 0 30px 30px 0;
+   background: linear-gradient(to right, red , yellow);
+   font-size: 15px;
+  }
+  .navbar ul .searchinput .searchIcon{
+    display:block;
+    color: #ffffff;
+    margin-right: 10px;
+  }
 }
 
 
